@@ -1,0 +1,103 @@
+/* =============================
+   Simple styles for the demo UI
+   ============================= */
+
+/* Basic page background + font */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f7fb;
+  color: #111;
+}
+
+/* Container width and spacing */
+.container {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+/* Grid layout for signup/login cards */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  /* On small screens, stack cards */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card appearance */
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+/* Form styling */
+label {
+  display: block;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Message area */
+.message {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.message.success {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.message.error {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+/* Small helper styles */
+.muted {
+  color: #555;
+}
+
+.success {
+  color: #166534;
+}
+
